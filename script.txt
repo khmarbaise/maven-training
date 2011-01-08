@@ -1,0 +1,157 @@
+- Maven Basics
+  - Repositories
+    - local/remote/repository manager
+  - Basics Lifecylce
+    compile => what is done?, test, package etc.
+    etc.
+  - Project Object Model
+
+  - The "Convention over Configuration" paradigma
+    - layout (folders)
+
+  - Coordinates
+
+  - Versioning Concept of Maven
+    - 1.0.0-SNAPSHOT ...
+    - 1.0.0
+
+  - POM Inheritance/aggregation
+    - What is inherited and what is not..
+    - Why to use it? Company setup's etc.
+  
+  - Archetypes
+    - What is an archetype?
+    - What kind of archetype do exist?
+  
+
+- Dependencies
+  - direct dependencies
+  - transitive dependencies
+  - include/exclude transitive dependencies
+    - An own module for IT's.
+
+- First simple project
+  - Show simplest pom (not recommended)
+    mvn help:effective-pom 
+
+  - create a jar with the simple setup
+  - Show how to setup this ...
+
+  - Unit Tests (mvn test)
+    - Parts needed in different modules as well? => ?
+
+  - package (mvn package)
+    -> packaging type (<packaging>jar</packaging>) => consequences
+
+  - Dependencies (Plugins etc.) => downloading parts of Maven 
+    but how does maven known what to download => Super POM!
+  - resources
+    - files for tests (src/test/resources)
+    - files for application (src/main/resources)
+    - How to use resources in Java (?)
+  - javadoc packages
+    - src/main/javadoc
+
+  - mvn install 
+    -> What is does!
+
+  - At this point ?
+  - mvn deploy (Not usually alone only in relationship with release!)
+    snapshot releases => !
+
+  - mvn help:effective-pom
+  - mvn dependency:tree / analyze
+
+- Site generation
+  - mvn site
+  - mvn site:deploy
+
+  - documentation
+    apt, fmt, etc.
+  - links etc. in apt
+  - Reports
+    - which kind of reports do exist?
+    - How to configure reports
+      - pmd, ncss, surefire etc.
+
+- Reactor builds
+  - Multiple Modules
+	- Create one, how to use it..
+  - mvn install (first why?)
+  - Unit Tests (mvn test)
+      - Parts needed in different modules as well? => See Assemblies
+  - Integration Test (mvn integration-test)
+    - An own module for IT's.
+      - maven-failsafe-plugin -> Example
+
+  - packaging
+  - use of an module from a reactor build in other projects?
+    - Check if this works..
+
+  - site does not work with reactor builds..
+
+- Assemblies
+  - Default assemblies
+  - Archive types
+  - Component Descriptors
+  - Creating test-jars
+
+- Release Cylce
+  - mvn release:prepare / release:perform
+    - What is needed to do releases with Maven ?
+      => SCM entry.
+      mvn release:rollback / release:clean
+
+- Best Practice
+  - POM's
+    - fixing maven plugins versions
+    - don't use version ranges.
+    - define license
+    - define scm
+    - define site / url 
+    - define developers etc.
+    - mailing list ?
+    - distributionManagement
+    - issueManagement
+    - ciManagement
+    - Encoding (property...)
+  - Modules
+    - Use a module instead trying to create multiple artifacts
+      client/server..combination of client/server as tar.gz
+
+- Properties
+  - Where to define?
+  - What can be done?
+  - Filterting of resources
+
+- profiles / server names paswords (settings.xml)
+  - profiles in POM
+  - Refactoring POM's
+  - Dependencies in different profiles
+    - Different database driver (e.g. JDBC) for different profiles
+      like dev,test,production
+  - How to define common dependencies (pom type)
+
+ - Signing of artifacts within release cycle
+
+- Plugins
+  - Which kind of Plugins do exist?
+    - compiler (Java 1.5)
+    - jar plugin
+    - buildnumber plugin
+    - changes plugin
+      - change.xml file
+    - assembly
+	  - Examples
+    - appassembler
+	  - Examples
+    - war, 
+      -> Examples !
+    - cargo (Integration Tests)
+      -> Example with Web-Service (?)
+    - dependency plugin (copy, rename)
+      -> tomcat => with Hudson
+    - Antrun to show properties
+- Hints abouts
+  - RPM
+  - NAR Plugin

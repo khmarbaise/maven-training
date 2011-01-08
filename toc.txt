@@ -1,0 +1,88 @@
+- Maven Basics
+  - Repositories
+  - Lifecylce
+  - Project Object Model
+  - The "Convention over Configuration" paradigma
+  - Coordinates
+  - POM Inheritance/aggregation
+  - Archetypes
+
+- Dependencies
+  - dependencies
+  - transitive dependencies
+  - include/exclude dependencies
+
+- First simple project
+  - Show simplest pom (not recommended)
+  - create a jar with the simple setup
+  - Show how to setup this ...
+  - Unit Tests (mvn test)
+  - packaging
+  - Dependencies plugins
+  - resources
+  - javadoc
+  - mvn install 
+  - mvn deploy
+    snapshot releases => !
+  - mvn help:effective-pom
+  - mvn dependency:tree / analyze
+
+- Site generation
+  - mvn site
+  - mvn site:deploy
+  - documentation
+    apt, fmt, etc.
+    - links etc. in apt
+  - Reports
+
+- Reactor builds
+  - Multiple Modules
+  - mvn install (first why?)
+  - Unit Tests (mvn test)
+  - Integration Test (mvn integration-test)
+  - packaging
+  - use of an module from a reactor build in other projects?
+
+- Assemblies
+  - Default assemblies
+  - Archive types
+  - Component Descriptors
+  - Creating test-jars
+
+- Release Cylce
+  - What it does?
+  - How to use
+  - Signing of artifacts within release cycle
+
+- Best Practice
+  - POM's
+  - Modules
+
+- Properties
+  - Why and how to use them?
+  - Filterting of resources
+  - Defining and usage of our own properties
+
+- Profiles / server names paswords (settings.xml)
+  - profiles in POM
+  - Refactoring POM's
+  - How to define common dependencies (pom type)
+
+- Profiles
+  - Profiles.xml file
+  - Activations of profiles
+  - Environment
+  - Compatibility
+    - Only available in Maven 2.0.X till 2.2.1 removed in Maven 3.
+
+- Plugins
+    - compiler
+    - jar
+    - changes
+    - assembly
+    - appassembler
+    - buildnumber plugin
+    - war, 
+    - cargo
+    - dependency
+    - Antrun
