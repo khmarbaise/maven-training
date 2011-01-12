@@ -4,6 +4,7 @@
   - Project Object Model
   - The "Convention over Configuration" paradigma
   - Coordinates
+  - Folder layout
   - POM Inheritance/aggregation
   - Archetypes
 
