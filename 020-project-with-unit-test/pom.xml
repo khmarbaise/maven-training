@@ -9,7 +9,7 @@
     <artifactId>simple-project-with-unit-test</artifactId>
     <version>0.1.0-SNAPSHOT</version>
 
-    <name>Simple Project with unit test</name>
+    <name>020 :: Simple Project with unit test</name>
 
     <dependencies>
       <dependency>

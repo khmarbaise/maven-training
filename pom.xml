@@ -12,8 +12,8 @@
 
     <name>Parent POM</name>
 
-	<modules>
-		<module>simple-project-with-unit-test</module>
-		<module>simplest-pom</module>
-	</modules>
+    <modules>
+      <module>010-simplest-pom</module>
+      <module>020-project-with-unit-test</module>
+    </modules>
 </project>
