@@ -17,5 +17,7 @@
       <module>020-project-with-unit-test</module>
       <module>021-project-with-resources</module>
       <module>022-project-filtered-resources</module>
+      <!-- Project with maven compiler plugin -->
+      <module>030-project-compiler-configuration</module>
     </modules>
 </project>
