@@ -19,5 +19,6 @@
       <module>030-project-with-unit-test</module>
       <module>031-project-with-resources</module>
       <module>032-project-with-filtered-resources</module>
+      <module>040-project-dependency-exclude</module>
     </modules>
 </project>
