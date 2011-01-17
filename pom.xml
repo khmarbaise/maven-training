@@ -8,12 +8,13 @@
     <groupId>com.soebes.maven.training.module</groupId>
     <artifactId>parent-pom</artifactId>
     <version>0.1.0-SNAPSHOT</version>
-	<packaging>pom</packaging>
+    <packaging>pom</packaging>
 
     <name>Parent POM</name>
 
     <modules>
       <module>010-simplest-pom</module>
       <module>020-project-with-unit-test</module>
+      <module>021-project-with-resources</module>
     </modules>
 </project>
