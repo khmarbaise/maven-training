@@ -14,10 +14,10 @@
 
     <modules>
       <module>010-simplest-pom</module>
-      <module>020-project-with-unit-test</module>
-      <module>021-project-with-resources</module>
-      <module>022-project-filtered-resources</module>
       <!-- Project with maven compiler plugin -->
-      <module>030-project-compiler-configuration</module>
+      <module>020-project-with-compiler-configuration</module>
+      <module>030-project-with-unit-test</module>
+      <module>031-project-with-resources</module>
+      <module>032-project-with-filtered-resources</module>
     </modules>
 </project>
