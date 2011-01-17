@@ -6,11 +6,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.soebes.training.module</groupId>
-    <artifactId>simple-project-with-resources</artifactId>
+    <artifactId>simple-project-with-filtered-resources</artifactId>
     <version>0.1.0-SNAPSHOT</version>
 
-    <name>021 :: Simple Project with resources</name>
+    <name>022 :: Simple Project with filtered resources</name>
 
+    <build>
+      <resources>
+        <resource>
+          <directory>src/main/resources</directory>
+          <filtering>true</filtering>
+        </resource>
+      </resources>
+    </build>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
