@@ -12,12 +12,12 @@
     <name>022 :: Simple Project with filtered resources</name>
 
     <build>
-      <resources>
-        <resource>
-          <directory>src/main/resources</directory>
-          <filtering>true</filtering>
-        </resource>
-      </resources>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
     </build>
     <dependencies>
         <dependency>
@@ -26,7 +26,13 @@
             <version>4.8.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.14</version>
+        </dependency>
     </dependencies>
 
 </project>
+
 

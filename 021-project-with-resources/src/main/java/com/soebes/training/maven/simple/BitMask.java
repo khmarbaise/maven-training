@@ -1,6 +1,8 @@
 package com.soebes.training.maven.simple;
 
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
+
+
 
 /**
  * XXX.
