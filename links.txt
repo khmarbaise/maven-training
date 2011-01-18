@@ -1,0 +1,7 @@
+
+OSS Maven Repository Usage Guide
+
+https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide
+
+http://www.sonatype.com/people/2009/06/publishing-your-artifacts-to-the-central-maven-repository/
+
