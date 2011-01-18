@@ -21,5 +21,6 @@
       <module>032-project-with-filtered-resources</module>
       <module>040-project-dependency-exclude</module>
       <module>045-project-with-sources/</module>
+      <module>050-project-without-warnings</module>
     </modules>
 </project>

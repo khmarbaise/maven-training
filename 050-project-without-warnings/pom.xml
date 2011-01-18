@@ -6,10 +6,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.soebes.training.module</groupId>
-    <artifactId>045-project-with-sources</artifactId>
+    <artifactId>050-project-without-warnings</artifactId>
     <version>0.1.0-SNAPSHOT</version>
 
-    <name>045 :: Project with source</name>
+    <name>050 :: Project without warnings</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>	
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
 
     <build>
       <resources>
