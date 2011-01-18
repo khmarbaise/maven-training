@@ -1,0 +1,59 @@
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.soebes.maven.training.module</groupId>
+  <artifactId>parent</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0.0-SNAPSHOT</version>
+  <name>ModuleTest :: Parent</name>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <scm>
+    <connection>scm:svn:file:///km/xxxx/trunk</connection>
+    <developerConnection>scm:svn:file:///km/xxxx/trunk</developerConnection>
+    <url>https://xyz.de/viewvc?root=migration</url>
+  </scm>
+
+	<distributionManagement>
+		<site>
+			<id>local</id>
+			<name>Local Site Deployment</name>
+			<url>file:///Users/km/distribution/site/</url>
+		</site>
+		<repository>
+			<id>release</id>
+			<name>Release Repository</name>
+			<url>file:///Users/km/distribution/release/</url>
+		</repository>
+	</distributionManagement>
+
+	<modules>
+		<module>m1</module>
+		<module>m2</module>
+		<module>m3</module>
+		<module>m4</module>
+	</modules>
+    
+	<build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.0</version>
+        <configuration>
+          <stagingRepository>STAGING</stagingRepository>
+          <autoVersionSubmodules>true</autoVersionSubmodules>
+          <preparationGoals>install</preparationGoals>
+        </configuration>
+      </plugin>
+		</plugins>
+	</build>
+
+</project>
