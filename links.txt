@@ -5,3 +5,4 @@ https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage
 
 http://www.sonatype.com/people/2009/06/publishing-your-artifacts-to-the-central-maven-repository/
 
+http://evgeny-goldin.com/wiki/Maven-copy-plugin
