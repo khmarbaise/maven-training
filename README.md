@@ -13,3 +13,6 @@ This is intended to have examples for a Maven Workshop / Training.
 * 045-project-with-sources
 * 050-project-without-warnings
 
+* 500-assembly-plugin
+
+  project-site-mvn2-mvn3 (site generation compatibility mvn2/mvn3)

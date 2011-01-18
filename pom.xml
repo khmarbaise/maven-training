@@ -22,5 +22,9 @@
       <module>040-project-dependency-exclude</module>
       <module>045-project-with-sources/</module>
       <module>050-project-without-warnings</module>
+
+
+      <!-- Later -->
+      <module>500-assembly-plugin</module>
     </modules>
 </project>
