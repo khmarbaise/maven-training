@@ -26,5 +26,6 @@
 
     <!-- Later -->
     <module>500-assembly-plugin</module>
+    <module>501-assembly-plugin</module>
   </modules>
 </project>
