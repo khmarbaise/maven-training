@@ -14,5 +14,10 @@ This is intended to have examples for a Maven Workshop / Training.
 * 050-project-without-warnings
 
 * 500-assembly-plugin
+* 501-assembly-plugin
+
+* CIEnv example
+* Utility example
+  (Use JCommander!)
 
   project-site-mvn2-mvn3 (site generation compatibility mvn2/mvn3)
