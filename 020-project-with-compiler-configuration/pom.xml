@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.soebes.training.module</groupId>
-  <artifactId>project-compiler-configuration</artifactId>
+  <artifactId>020-project-compiler-configuration</artifactId>
   <version>0.1.0-SNAPSHOT</version>
 
   <name>020 :: Project with compiler configuration</name>
