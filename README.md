@@ -17,7 +17,13 @@ This is intended to have examples for a Maven Workshop / Training.
 * 501-assembly-plugin
 
 * CIEnv example
+  - hudson-piling
+    - example for multiple executions
+  - dependency plugin copy
 * Utility example
   (Use JCommander!)
+* multimodule-deps
+  Example for ordering of the reactor + inheritance
+
 
   project-site-mvn2-mvn3 (site generation compatibility mvn2/mvn3)
