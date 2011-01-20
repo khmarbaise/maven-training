@@ -15,13 +15,14 @@ This is intended to have examples for a Maven Workshop / Training.
 
 * 500-assembly-plugin
 * 501-assembly-plugin
+* 502-assembly-plugin (utility with CLI + packaging + appassembly plugin)
 
 * CIEnv example
   - hudson-piling
     - example for multiple executions
   - dependency plugin copy
-* Utility example
-  (Use JCommander!)
+* utbc (test-jar) Example
+
 * multimodule-deps
   Example for ordering of the reactor + inheritance
 
