@@ -27,7 +27,9 @@ This is intended to have examples for a Maven Workshop / Training.
 * multimodule-deps
   Example for ordering of the reactor + inheritance
 
-
+* Configured example for doing a release
+  - use file:/// for Subversion instead http(s)
+  - use local location for distribution area (site, artifacts)
 
 ToDo
 ----
