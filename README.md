@@ -3,7 +3,6 @@ Maven Training
 
 This is intended to have examples for a Maven Workshop / Training.
 
-
 * 010-simplest-pom
 * 020-project-with-compiler-configuration
 * 030-project-with-unit-test
@@ -20,9 +19,7 @@ This is intended to have examples for a Maven Workshop / Training.
 * 550-dependency-management
 * 555-plugin-management
 
-* Aggregator example (?)
-* Example with dependencyManagement
-* Example with pluginManagement
+* Aggregator example (?) (the root pom in this folder!)
 
 * Inheritance example
 
@@ -35,6 +32,8 @@ This is intended to have examples for a Maven Workshop / Training.
 ToDo
 ----
 
+* project-site-mvn2-mvn3 (site generation compatibility mvn2/mvn3)
+
 * WAR example ?
   -> which one? Take a look into the Maven book ? Waether Example
 
@@ -45,8 +44,8 @@ ToDo
   - hudson-piling
     - example for multiple executions
   - dependency plugin copy
+
 * utbc (test-jar) Example
 
 
-  project-site-mvn2-mvn3 (site generation compatibility mvn2/mvn3)
 
