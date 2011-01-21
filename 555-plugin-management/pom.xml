@@ -5,14 +5,15 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.soebes.tools</groupId>
-  <artifactId>utility</artifactId>
+  <groupId>com.soebes.maven.training.module</groupId>
+  <artifactId>plugin-management</artifactId>
   <version>0.1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>502 :: assembly plugin (Utility Project)</name>
+  <name>555 :: Plugin Management</name>
+
   <url>http://www.soebes.de</url>
-  <inceptionYear>2010</inceptionYear>
+  <inceptionYear>2011</inceptionYear>
   <organization>
     <name>SoftwareEntwicklung Beratung Schulung</name>
     <url>http://www.soebes.de</url>
@@ -29,21 +30,64 @@
     <url>xxxx</url>
   </scm>
 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>log4j</groupId>
+        <artifactId>log4j</artifactId>
+        <version>1.2.14</version>
+      </dependency>
+      <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>5.14.6</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>commons-lang</groupId>
+        <artifactId>commons-lang</artifactId>
+        <version>2.1</version>
+      </dependency>
+      <dependency>
+        <groupId>com.beust</groupId>
+        <artifactId>jcommander</artifactId>
+        <version>1.13</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
   <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>2.3.2</version>
+          <configuration>
+            <source>1.6</source>
+            <target>1.6</target>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>appassembler-maven-plugin</artifactId>
+          <version>1.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-assembly-plugin</artifactId>
+          <version>2.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>2.3.2</version>
-        <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
-        </configuration>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>appassembler-maven-plugin</artifactId>
-        <version>1.1</version>
         <executions>
           <execution>
             <phase>prepare-package</phase>
@@ -75,7 +119,6 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-assembly-plugin</artifactId>
-        <version>2.2</version>
         <configuration>
           <descriptors>
             <descriptor>src/main/assembly/bin.xml</descriptor>
@@ -95,27 +138,24 @@
       </plugin>
     </plugins>
   </build>
+
   <dependencies>
     <dependency>
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
-      <version>1.2.14</version>
     </dependency>
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
-      <version>5.14.6</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>commons-lang</groupId>
       <artifactId>commons-lang</artifactId>
-      <version>2.1</version>
     </dependency>
     <dependency>
       <groupId>com.beust</groupId>
       <artifactId>jcommander</artifactId>
-      <version>1.13</version>
     </dependency>
   </dependencies>
 </project>

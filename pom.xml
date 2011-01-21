@@ -28,5 +28,8 @@
     <module>500-assembly-plugin</module>
     <module>501-assembly-plugin</module>
     <module>502-assembly-plugin</module>
+    
+    <module>550-dependency-management</module>
+    <module>555-plugin-management</module>
   </modules>
 </project>

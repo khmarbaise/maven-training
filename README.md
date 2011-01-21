@@ -17,11 +17,29 @@ This is intended to have examples for a Maven Workshop / Training.
 * 501-assembly-plugin
 * 502-assembly-plugin (utility with CLI + packaging + appassembly plugin)
 
+* 550-dependency-management
+* 555-plugin-management
+
 * Aggregator example (?)
 * Example with dependencyManagement
 * Example with pluginManagement
+
 * Inheritance example
 
+
+* multimodule-deps
+  Example for ordering of the reactor + inheritance
+
+
+
+ToDo
+----
+
+* WAR example ?
+  -> which one? Take a look into the Maven book ? Waether Example
+
+* maven-changelog-plugin
+  - changes.xml 
 
 * CIEnv example
   - hudson-piling
@@ -29,8 +47,6 @@ This is intended to have examples for a Maven Workshop / Training.
   - dependency plugin copy
 * utbc (test-jar) Example
 
-* multimodule-deps
-  Example for ordering of the reactor + inheritance
-
 
   project-site-mvn2-mvn3 (site generation compatibility mvn2/mvn3)
+
