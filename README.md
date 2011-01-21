@@ -17,6 +17,12 @@ This is intended to have examples for a Maven Workshop / Training.
 * 501-assembly-plugin
 * 502-assembly-plugin (utility with CLI + packaging + appassembly plugin)
 
+* Aggregator example (?)
+* Example with dependencyManagement
+* Example with pluginManagement
+* Inheritance example
+
+
 * CIEnv example
   - hudson-piling
     - example for multiple executions
