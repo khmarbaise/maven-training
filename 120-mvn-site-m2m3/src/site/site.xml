@@ -1,0 +1,6 @@
+<project name="Hello World"> 
+  <body> 
+    <menu ref="reports"/> 
+  </body> 
+</project> 
+
