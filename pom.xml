@@ -33,5 +33,7 @@
     
     <module>550-dependency-management</module>
     <module>555-plugin-management</module>
+    
+    <module>900-release</module>
   </modules>
 </project>

@@ -24,6 +24,8 @@ May be i have to move the site examples after 555...
 * 550-dependency-management
 * 555-plugin-management
 
+* 900-release
+
 * Aggregator example (?) (the root pom in this folder!)
 
 * Inheritance example
@@ -36,10 +38,6 @@ May be i have to move the site examples after 555...
 
 ToDo
 ----
-
-* Configure an example for doing a release
-  - use file:/// for Subversion instead http(s)
-  - use local location for distribution area (site, artifacts)
 
 * WAR example ?
   -> which one? Take a look into the Maven book ? Waether Example
