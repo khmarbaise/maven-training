@@ -1,0 +1,70 @@
+~~
+~~ The Subversion Authentication Parse Module (SAPM for short).
+~~
+~~ Copyright (c) 2010, 2011 by SoftwareEntwicklung Beratung Schulung (SoEBeS)
+~~ Copyright (c) 2010, 2011 by Karl Heinz Marbaise
+~~
+~~ Licensed to the Apache Software Foundation (ASF) under one or more
+~~ contributor license agreements.  See the NOTICE file distributed with
+~~ this work for additional information regarding copyright ownership.
+~~ The ASF licenses this file to You under the Apache License, Version 2.0
+~~ (the "License"); you may not use this file except in compliance with
+~~ the License.  You may obtain a copy of the License at
+~~
+~~    http://www.apache.org/licenses/LICENSE-2.0
+~~
+~~ Unless required by applicable law or agreed to in writing, software
+~~ distributed under the License is distributed on an "AS IS" BASIS,
+~~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+~~ See the License for the specific language governing permissions and
+~~ limitations under the License.
+
+ ------
+ Introduction
+ ------
+ Karl Heinz Marbaise
+ ------
+ 06 January 2011
+ ------
+
+Subversion Authentication Parser Module
+
+  The idea is to read the
+  {{{http://svnbook.red-bean.com/nightly/en/svn-book.html#svn.serverconfig.pathbasedauthz}Subversion authentication file}}
+  and convert it into a object tree which can be used
+  for applications and to handle their permissions.
+
+* History
+
+  The original idea for this module based upon the {{{http://supose.org/wiki/supose}SupoSE project}}
+  which reads the contents of the whole repository but has to limit
+  the results of queries to the appropriate information which are
+  allowed for particular users.
+
+* Usage
+
+  If you like to use the Subversion Authentication Parser Module (SAPM)
+  inside your application the simplest way is (if you are using {{{http://maven.pache.org}Maven}})
+  to define the dependency in your
+  {{{http://maven.apache.org/guides/introduction/introduction-to-the-pom.html}pom.xml}}
+  and use the classes of the module otherwise you have to download the jar
+  file and put it into your classpath.
+
++-----
+<project>
+  ...
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>${project.artifactId}</artifactId>
+        <version>${project.version}</version>
+      </plugin>
+    </plugins>
+  </build>
+  ...
+</project>
++-----
+
+  []
+

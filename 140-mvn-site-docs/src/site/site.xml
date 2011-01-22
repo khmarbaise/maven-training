@@ -1,0 +1,23 @@
+<project name="This is the Site"> 
+ <skin>
+    <groupId>org.apache.maven.skins</groupId>
+    <artifactId>maven-classic-skin</artifactId>
+    <version>1.0</version>
+  </skin>
+  <body> 
+    <breadcrumbs>
+      <item name="german" href="de/index.html"/>
+    </breadcrumbs>
+
+    <menu name="Overview">
+      <item name="Introduction" href="index.html"/>
+      <item name="Examples" href="examples.html"/>
+      <item name="Load File" href="load.html"/>
+      <item name="Features" href="features.html"/>
+    </menu>
+    <menu ref="parent"/> 
+    <menu ref="modules"/> 
+    <menu ref="reports"/> 
+  </body> 
+</project> 
+

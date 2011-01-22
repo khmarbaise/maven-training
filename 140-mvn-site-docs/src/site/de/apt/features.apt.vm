@@ -1,0 +1,217 @@
+~~
+~~ The Subversion Authentication Parse Module (SAPM for short).
+~~
+~~ Copyright (c) 2010, 2011 by SoftwareEntwicklung Beratung Schulung (SoEBeS)
+~~ Copyright (c) 2010, 2011 by Karl Heinz Marbaise
+~~
+~~ Licensed to the Apache Software Foundation (ASF) under one or more
+~~ contributor license agreements.  See the NOTICE file distributed with
+~~ this work for additional information regarding copyright ownership.
+~~ The ASF licenses this file to You under the Apache License, Version 2.0
+~~ (the "License"); you may not use this file except in compliance with
+~~ the License.  You may obtain a copy of the License at
+~~
+~~    http://www.apache.org/licenses/LICENSE-2.0
+~~
+~~ Unless required by applicable law or agreed to in writing, software
+~~ distributed under the License is distributed on an "AS IS" BASIS,
+~~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+~~ See the License for the specific language governing permissions and
+~~ limitations under the License.
+
+ ------
+ Supported Features
+ ------
+ Karl Heinz Marbaise
+ ------
+ 06 January 2011
+ ------
+
+Supported Features
+
+* Supported Permissions
+
+  * NOTHING
+
+    ** This is equal to the expression <<user =>>
+
+  * READ
+
+    ** This is equal to the expression <<user = r>>
+
+  * READ/WRITE
+
+    ** This is equal to the expression <<user = rw>>
+
+  A write permission alone is not supported, cause it does not make sense
+  in relationship with {{{http://subversion.apache.org}Subversion}}.
+
+* Global Rule
+
+  The global rule can be used like the following to define anybody with
+  a particular permission. In this case anybody is represented by the <<*>>.
+
++----
+[/]
+* = r
++----
+
+* User permission
+
+  A permission for a particular area of the repository can be defined for a special
+  user like the following:
+
++----
+[calc:/path/to/]
+username_a = rw
+username_b = r
++----
+
+  Based on the above example the <<<username_a>>> has <read/write> permission to the
+  path <</path/to>> in the repository <<calc>> whereas the <<<username_b>>> has only
+  <read> permission
+
+
+* Aliases
+
+  The alias is a way to define a complicate user name which
+  can be used to simplify the maintenance of the access file.
+
++----
+[aliases]
+harry = CN=Harold Hacker,OU=Engineers,DC=red-bean,DC=com
+sally = CN=Sally Swatterbug,OU=Engineers,DC=red-bean,DC=com
+joe = CN=Gerald I. Joseph,OU=Engineers,DC=red-bean,DC=com
+
+[groups]
+calc-developers = &harry, &sally, &joe
+paint-developers = &frank, &sally, &jane
+everyone = @calc-developers, @paint-developers
++----
+
+
+* Groups
+
+  In {{{http://svnbook.red-bean.com/nightly/en/svn-book.html#svn.serverconfig.pathbasedauthz}Subversion authentication file}}
+  as well as in SAPM you can define a Group which contains users, groups and
+  alias as well. This means it's possible to define a Group of Groups like in
+  the following example:
+
++----
+[groups]
+project-a = harry, brian
+project-b = michael, sally
+project-c = jonas
+all-developer = @project-a, @project-b, @project-c
++----
+
+  The defined groups can be used to grant permission to the repository and/or paths instead
+  of particular users.
+
++----
+[repo1:/project-a/]
+@project-a = rw
+[repo1:/project-b/]
+@project-b = rw
+[repo1:/project-c/]
+@project-c = rw
++----
+
+
+* Tokens
+
+  There existing two special tokens <<<$authenticated>>> and <<<$anonymous>>> which
+  represent an authenticated user (has a username) or a unauthorized user (no user name).
+
+* Exclusion Marker
+
+  The exclusion marker <<<~>>> is used to invert the meaning of a permission rule.
+
++----
+[groups]
+calc-developers = harry, sally, joe
+calc-owners = hewlett, packard
+calc = @calc-developers, @calc-owners
+
+# Any calc participant has read-write access...
+[calc:/projects/calc]
+@calc = rw
+
+# ...but only allow the owners to make and modify release tags.
+[calc:/projects/calc/tags]
+~@calc-owners = r
++----
+
+  This means that all users who don't match the rule <<<@calc-owner>>> will get <read> permission
+  for this area.
+
+  The above configuration file can be expressed by the following code for permissions definition:
+
++----
+AccessRules accessRules = new AccessRules();
+
+User userHarry = UserFactory.createInstance("harry");
+User userSally = UserFactory.createInstance("sally");
+User userJoe = UserFactory.createInstance("joe");
+User userHewlett = UserFactory.createInstance("hewlett");
+User userPackard = UserFactory.createInstance("packard");
+
+
+Group calcDevelopers = new Group("calc-developers");
+// @calc-developers = harry, sally, joe
+calcDevelopers.add(userHarry);
+calcDevelopers.add(userSally);
+calcDevelopers.add(userJoe);
+
+Group calcOwners = new Group("calc-owners");
+// @calc-owners = hewlett, packard
+calcOwners.add(userHewlett);
+calcOwners.add(userPackard);
+
+// calc = @calc-developers, @calc-owners
+Group calc = new Group("calc");
+calc.add(calcDevelopers);
+calc.add(calcOwners);
+
+// [calc:/projects/calc]
+// @calc = rw
+AccessRule ar_1 = new AccessRule("calc", "/projects/calc/");
+ar_1.add(calc, AccessLevel.READ_WRITE);
+
+// [calc:/projects/calc/tags]
+// ~@calc-owners = r
+AccessRule ar_2 = new AccessRule("calc", "/projects/calc/tags/");
+ar_2.addNegative(calcOwners, AccessLevel.READ);
+
+accessRules.add(ar_1);
+accessRules.add(ar_2);
++----
+
+* Order of rules
+
+  Based on the following rule set the user <jenny>
+  will get a READ permission to the repository <<calc>>
+  in the folder <</project/>>.
+
++----
+[groups]
+groupa = jenny, joe, danny
+[calc:/project/]
+@groupa = rw
+jenny = r
++----
+
+  But if we just change the order of the last rule like this:
+
++----
+[groups]
+groupa = jenny, joe, danny
+[calc:/project/]
+jenny = r
+@groupa = rw
++----
+
+  The user <jenny> will get a READ/WRITE permission based on the
+  membership to the group <<groupa>> instead of READ as before.
+
+  This means the order of the rules counts.

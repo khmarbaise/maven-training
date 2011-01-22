@@ -16,6 +16,8 @@ May be i have to move the site examples after 555...
 * 100-maven-site-m2 (First basic example)
 * 110-maven-site-m3 
 * 120-maven-site-m2m3 (working for M2 and M3)
+* 130-maven-site-more (self defined content index.apt etc.)
+* 140-maven-site-docs (multi language)
 
 * 500-assembly-plugin
 * 501-assembly-plugin

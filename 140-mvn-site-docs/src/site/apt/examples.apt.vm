@@ -1,0 +1,120 @@
+~~
+~~ The Subversion Authentication Parse Module (SAPM for short).
+~~
+~~ Copyright (c) 2010, 2011 by SoftwareEntwicklung Beratung Schulung (SoEBeS)
+~~ Copyright (c) 2010, 2011 by Karl Heinz Marbaise
+~~
+~~ Licensed to the Apache Software Foundation (ASF) under one or more
+~~ contributor license agreements.  See the NOTICE file distributed with
+~~ this work for additional information regarding copyright ownership.
+~~ The ASF licenses this file to You under the Apache License, Version 2.0
+~~ (the "License"); you may not use this file except in compliance with
+~~ the License.  You may obtain a copy of the License at
+~~
+~~    http://www.apache.org/licenses/LICENSE-2.0
+~~
+~~ Unless required by applicable law or agreed to in writing, software
+~~ distributed under the License is distributed on an "AS IS" BASIS,
+~~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+~~ See the License for the specific language governing permissions and
+~~ limitations under the License.
+
+ ------
+ Usage
+ ------
+ Karl Heinz Marbaise
+ ------
+ 06 January 2011
+ ------
+
+Examples
+
+* First simple example
+
+  You would like to define a configuration like the following
+  with the Subversion Authentication Parser Module (SAPM for short).
+
++----
+[/]
+* = r
+[repository:/test]
+harry = rw
+brian = rw
++----
+
+  First we need an instance of AccessRules class which stores
+  all the rules.
+
++----
+AccessRules accessRules = new AccessRules();
++----
+
+  The next step is to create the first rule
+
++----
+[/]
+* = r
++----
+
+  This can be achieved by using the following code snippet:
+
++----
+User user = UserFactory.createInstance("*");
+AccessRule accessRuleRoot = new AccessRule("/");
+accessRuleRoot.add(user, AccessLevel.READ);
+accessRules.add(accessRuleRoot);
++----
+
+  Now you have to create the second rule part.
+
++----
+[repository:/test]
+harry = rw
+brian = rw
++----
+
+  The second part can be done with the following code:
+
++----
+User userHarry = UserFactory.createInstance("harry");
+User userBrian = UserFactory.createInstance("brian");
+
+AccessRule accessRule = new AccessRule("repository", "/test/trunk");
+accessRule.add(userHarry, AccessLevel.READ_WRITE);
+accessRule.add(userMicheal, AccessLevel.READ_WRITE);
+accessRules.add(accessRule);
++----
+
+  The final step is now that you check a user against the
+  defined rules.
+
++----
+AccessLevel userPermission = accessRules.getAccess(user, repository, accessPath);
++----
+
+  The user represents the <<<user>>> which tries to get access
+  to the <<<repository>>> in the given <<<path>>>.
+
+* Enhanced Examples
+
+  You have defined the following rule set in your configuration file. Either
+  you can load that file by using the AuthenticationFile class or you can create
+  that structure in memory to use this as a permission system.
+
++----
+[groups]
+c-developer = harry, brian
+d-developer = michael, sally
+e-developer = jonas
+all-developer = @c-developer, @d-developer, @e-developer
+[/]
+* = r
+[repository:/project-c/trunk]
+@c-developer = rw
+[repository:/project-d/trunk]
+@d-developer = rw
+[repository:/project-e/trunk]
+@e-developer = rw
+[global:/project/trunk]
+@all-developer = rw
++----
