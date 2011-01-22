@@ -17,23 +17,23 @@
   </properties>
 
   <scm>
-    <developerConnection>scm:svn:file://${project.basedir}/repos/trunk</developerConnection>
-    <connection>scm:git:git://github.com/khmarbaise/smpp.git</connection>
+    <developerConnection>scm:svn:file://${project.basedir}/../repos/trunk</developerConnection>
+    <connection>scm:svn:file://${project.basedir}/../repos/trunk</connection>
     <url>https://github.com/khmarbaise/test</url>
   </scm>
 
   <distributionManagement>
     <repository>
       <id>staging</id>
-      <url>file://${project.basedir}/distribution/releases/${project.groupId}/${project.artifactId}/${project.version}/</url>
+      <url>file://${project.basedir}/../releases/release/${project.groupId}/${project.artifactId}/${project.version}/</url>
     </repository>
     <snapshotRepository>
       <id>snapshots</id>
-      <url>file://${basedir}/distribution/snapshots/${project.groupId}/${project.artifactId}/${project.version}/</url>
+      <url>file://${project.basedir}/../releases/snapshots/${project.groupId}/${project.artifactId}/${project.version}/</url>
     </snapshotRepository>
     <site>
       <id>site.server</id>
-      <url>file://${basedir}/site/${project.groupId}/${project.artifactId}/${project.version}/</url>
+      <url>file://${project.basedir}/../releases/site/${project.groupId}/${project.artifactId}/${project.version}/</url>
     </site>
   </distributionManagement>
 
