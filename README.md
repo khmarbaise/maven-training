@@ -26,21 +26,20 @@ May be i have to move the site examples after 555...
 
 * Aggregator example (?) (the root pom in this folder!)
 
-
 * Inheritance example
-
 
 * multimodule-deps
   Example for ordering of the reactor + inheritance
 
-* Configured example for doing a release
-  - use file:/// for Subversion instead http(s)
-  - use local location for distribution area (site, artifacts)
+* Example with code generation
+  -> sapm (antlr)
 
 ToDo
 ----
 
-* project-site-mvn2-mvn3 (site generation compatibility mvn2/mvn3)
+* Configure an example for doing a release
+  - use file:/// for Subversion instead http(s)
+  - use local location for distribution area (site, artifacts)
 
 * WAR example ?
   -> which one? Take a look into the Maven book ? Waether Example
@@ -54,6 +53,4 @@ ToDo
   - dependency plugin copy
 
 * utbc (test-jar) Example
-
-
 
