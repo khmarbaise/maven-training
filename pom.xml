@@ -24,7 +24,8 @@
     <module>050-project-without-warnings</module>
 
     <module>100-mvn-site-m2</module>
-    <module>110-mvn-site-m3</module>
+    <module>120-mvn-site-m2m3</module>
+    <module>130-mvn-site-more</module>
 
     <!-- Later -->
     <module>500-assembly-plugin</module>
