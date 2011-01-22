@@ -31,6 +31,7 @@ May be i have to move the site examples after 555...
 * Aggregator example (?) (the root pom in this folder!)
 
 * Inheritance example
+  - supose ?
 
 * multimodule-deps
   Example for ordering of the reactor + inheritance
@@ -45,7 +46,7 @@ ToDo
   -> which one? Take a look into the Maven book ? Waether Example
 
 * maven-changelog-plugin
-  - changes.xml 
+  - changes.xml  (sapm)
 
 * CIEnv example
   - hudson-piling
