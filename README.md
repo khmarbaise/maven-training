@@ -39,6 +39,9 @@ May be i have to move the site examples after 555...
 * Example with code generation
   -> sapm (antlr)
 
+* Integration test
+  - See hudson-exported also for different <type>war</type>
+
 ToDo
 ----
 
