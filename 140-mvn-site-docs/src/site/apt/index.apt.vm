@@ -50,6 +50,9 @@ Subversion Authentication Parser Module
   and use the classes of the module otherwise you have to download the jar
   file and put it into your classpath.
 
+  The name of the project: ${project.name}
+
+
 +-----
 <project>
   ...

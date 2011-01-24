@@ -46,7 +46,7 @@
 		<fileSet>
 			<directory>${basedir}</directory>
 			<includes>
-				<include>search-examples.txt</include>
+				<include>README</include>
 			</includes>
 			<excludes>
 				<exclude>*.log</exclude>
