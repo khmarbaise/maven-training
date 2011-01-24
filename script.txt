@@ -24,6 +24,8 @@
     - What kind of archetype do exist?
   
 
+- M2_HOME 
+
 - Dependencies
   - direct dependencies
   - transitive dependencies

@@ -10,6 +10,7 @@ This is intended to have examples for a Maven Workshop / Training.
 * 032-project-with-filtered-resources
 * 040-project-dependency-exclude
 * 045-project-with-sources
+* 046-project-with-unit-test jar (see utbc https://github.com/khmarbaise/utbc)
 * 050-project-without-warnings
 
 May be i have to move the site examples after 555...
