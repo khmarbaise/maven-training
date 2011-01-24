@@ -158,4 +158,6 @@
       <artifactId>jcommander</artifactId>
     </dependency>
   </dependencies>
+  <modules>
+  </modules>
 </project>

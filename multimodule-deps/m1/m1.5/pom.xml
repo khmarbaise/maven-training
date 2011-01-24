@@ -14,7 +14,7 @@
 
     <artifactId>m1.5</artifactId>
     <name>ModuleTest :: M1 :: M1.5</name>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
@@ -23,4 +23,5 @@
 			<type>pom</type>
 		</dependency>
 	</dependencies>
+
 </project>
