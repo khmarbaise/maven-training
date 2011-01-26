@@ -14,6 +14,7 @@ This is intended to have examples for a Maven Workshop / Training.
 * 050-project-without-warnings
 
 May be i have to move the site examples after 555...
+
 * 100-maven-site-m2 (First basic example)
 * 110-maven-site-m3 
 * 120-maven-site-m2m3 (working for M2 and M3)
