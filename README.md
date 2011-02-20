@@ -48,7 +48,8 @@ ToDo
 ----
 
 * WAR example ?
-  -> which one? Take a look into the Maven book ? Waether Example
+  -  supose-war (simple wepapp with dependencies in relationship with a multimodule build)
+  -  which one? Take a look into the Maven book ? Waether Example
 
 * maven-changelog-plugin
   - changes.xml  (sapm)
