@@ -13,7 +13,7 @@
   </parent>
 
   <artifactId>900-release-prepare</artifactId>
-  <name>:: 900 release prepare</name>
+  <name>900 :: release prepare</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
