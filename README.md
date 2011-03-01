@@ -46,6 +46,12 @@ May be i have to move the site examples after 555...
 
 ToDo
 ----
+* Check the site generation parts
+  - Unit Test results?
+
+* Create a more complex example with parent POM for 
+  handling of the site generation in mvn2/mvn3
+
 
 * WAR example ?
   -  supose-war (simple wepapp with dependencies in relationship with a multimodule build)
@@ -58,6 +64,7 @@ ToDo
   - hudson-piling
     - example for multiple executions
   - dependency plugin copy
+  - Example for maven-rpm-plugin
 
 * utbc (test-jar) Example
 
