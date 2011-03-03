@@ -28,6 +28,8 @@ May be i have to move the site examples after 555...
 * 550-dependency-management
 * 555-plugin-management
 
+* 600-profiles (Activate profiles)
+
 * 900-release
 
 * Aggregator example (?) (the root pom in this folder!)
