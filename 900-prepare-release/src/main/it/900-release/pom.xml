@@ -48,6 +48,23 @@
 
     <pluginManagement>
       <plugins>
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-scm-plugin</artifactId>
+          <version>1.5</version>
+            <configuration>
+                <providerImplementations>
+                    <svn>javasvn</svn>
+                </providerImplementations>
+            </configuration>
+            <dependencies>
+                <dependency>
+                    <groupId>com.google.code.maven-scm-provider-svnjava</groupId>
+                    <artifactId>maven-scm-provider-svnjava</artifactId>
+                    <version>1.9</version>
+                </dependency>
+            </dependencies>
+        </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
@@ -55,8 +72,30 @@
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-changelog-plugin</artifactId>
+          <version>2.2</version>
+          <dependencies>
+            <dependency>
+              <groupId>com.google.scm.svnjava</groupId>
+              <artifactId>maven-scm-provider-svnjava</artifactId>
+              <version>1.9</version>
+            </dependency>
+          </dependencies>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-release-plugin</artifactId>
           <version>2.1</version>
+          <configuration>
+            <providerImplementations>
+              <svn>javasvn</svn>
+            </providerImplementations>
+            <dependency>
+              <groupId>com.google.code.maven-scm-provider-svnjava</groupId> 
+              <artifactId>maven-scm-provider-svnjava</artifactId> 
+              <version>1.12</version>
+            </dependency>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -77,6 +116,24 @@
     </pluginManagement>
 
     <plugins>
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-scm-plugin</artifactId>
+          <version>1.5</version>
+            <configuration>
+                <providerImplementations>
+                    <svn>javasvn</svn>
+                </providerImplementations>
+            </configuration>
+            <dependencies>
+                <dependency>
+                    <groupId>com.google.code.maven-scm-provider-svnjava</groupId>
+                    <artifactId>maven-scm-provider-svnjava</artifactId>
+                    <version>1.9</version>
+                </dependency>
+            </dependencies>
+      </plugin>
+
       <!-- Site -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -117,6 +174,11 @@
           <providerImplementations>
             <svn>javasvn</svn>
           </providerImplementations>
+          <dependency>
+            <groupId>com.google.code.maven-scm-provider-svnjava</groupId> 
+            <artifactId>maven-scm-provider-svnjava</artifactId> 
+            <version>1.12</version>
+          </dependency>
         </configuration>
       </plugin>
     </plugins>
@@ -158,7 +220,7 @@
         <file>
           <!-- This employs that the basedir expression is only recognized
             by Maven 3.x (see MNG-2363) -->
-          <exists>${basedir}</exists>
+          <exists>/Users/km/ws-git/maven-training/900-prepare-release</exists>
         </file>
       </activation>
       <build>
@@ -196,5 +258,4 @@
       </reporting>
     </profile>
   </profiles>
-
 </project>
