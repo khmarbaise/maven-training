@@ -33,5 +33,21 @@
         </os>
       </activation>
     </profile>
+    <profile>
+      <id>hudson-build</id>
+      <activation>
+        <property>
+          <name>HUDSON_JOB_ID</name>
+        </property>
+      </activation>
+    </profile>
+    <profile>
+      <id>jenkins-build</id>
+      <activation>
+        <property>
+          <name>JENKINS_JOB_ID</name>
+        </property>
+      </activation>
+    </profile>
   </profiles>
 </project>
