@@ -60,7 +60,7 @@ public class ReleaseTest extends UnitTestBase {
     }
 
     public void svnAdmin(File currentWorkingDirectory, List<String> parameters) throws IOException {
-        executeInteractive("/opt/subversion/bin/svnadmin", currentWorkingDirectory, parameters);
+        executeInteractive("svnadmin", currentWorkingDirectory, parameters);
     }
 
     public void svnImport(URI repository, String importFolder) throws IOException {
@@ -70,7 +70,7 @@ public class ReleaseTest extends UnitTestBase {
         parameters.add(repository.toString());
         parameters.add("-m");
         parameters.add("[unit test] import.");
-        executeInteractive("/opt/subversion/bin/svn", new File(getTargetDir()), parameters);
+        executeInteractive("svn", new File(getTargetDir()), parameters);
     }
 
     public void svnMkdir(URI repository) throws IOException {
@@ -79,7 +79,7 @@ public class ReleaseTest extends UnitTestBase {
         parameters.add(repository.toString());
         parameters.add("-m");
         parameters.add("[unit test] added location.");
-        executeInteractive("/opt/subversion/bin/svn", new File(getTargetDir()), parameters);
+        executeInteractive("svn", new File(getTargetDir()), parameters);
     }
 
     public void svnCheckout(URI repository, String workingCopyFolder) throws IOException {
@@ -87,7 +87,7 @@ public class ReleaseTest extends UnitTestBase {
         parameters.add("checkout");
         parameters.add(repository.toString());
         parameters.add(workingCopyFolder);
-        executeInteractive("/opt/subversion/bin/svn", new File(getTargetDir()), parameters);
+        executeInteractive("svn", new File(getTargetDir()), parameters);
     }
 
     private void changeWorkingDirectory(String newFolder) {

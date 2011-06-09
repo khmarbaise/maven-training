@@ -17,8 +17,8 @@
   </properties>
 
   <scm>
-    <connection>scm:javasvn:file://${project.build.directory}/repos/900-release/trunk</connection>
-    <developerConnection>scm:javasvn:file://${project.build.directory}/repos/900-release/trunk</developerConnection>
+    <connection>scm:svn:file://${project.build.directory}/repos/900-release/trunk</connection>
+    <developerConnection>scm:svn:file://${project.build.directory}/repos/900-release/trunk</developerConnection>
     <url>file://${project.build.directory}/repos/900-release/trunk</url>
   </scm>
 
@@ -51,18 +51,6 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-scm-plugin</artifactId>
           <version>1.5</version>
-            <configuration>
-                <providerImplementations>
-                    <svn>javasvn</svn>
-                </providerImplementations>
-            </configuration>
-            <dependencies>
-                <dependency>
-                    <groupId>com.google.code.maven-scm-provider-svnjava</groupId>
-                    <artifactId>maven-scm-provider-svnjava</artifactId>
-                    <version>1.9</version>
-                </dependency>
-            </dependencies>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -89,16 +77,6 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-release-plugin</artifactId>
           <version>2.1</version>
-          <configuration>
-            <providerImplementations>
-              <svn>javasvn</svn>
-            </providerImplementations>
-            <dependency>
-              <groupId>com.google.code.maven-scm-provider-svnjava</groupId> 
-              <artifactId>maven-scm-provider-svnjava</artifactId> 
-              <version>1.12</version>
-            </dependency>
-          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
