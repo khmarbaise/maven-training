@@ -10,12 +10,14 @@
   <name>040 :: Project dependency exclude</name>
 
   <build>
+
     <resources>
       <resource>
         <directory>src/main/resources</directory>
         <filtering>true</filtering>
       </resource>
     </resources>
+
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -39,6 +41,18 @@
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
       <version>1.2.14</version>
+    </dependency>
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>6.0.1</version>
+      <exclusions>
+        <exclusion>
+        <groupId>org.yaml</groupId>
+        <artifactId>snakeyaml</artifactId>
+        </exclusion>
+      </exclusions>
+
     </dependency>
   </dependencies>
 

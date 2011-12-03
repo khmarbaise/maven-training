@@ -34,6 +34,12 @@
             <phase>prepare-package</phase>
             <goals>
               <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>attach-source-test</id>
+            <phase>generate-test-sources</phase>
+            <goals>
               <goal>test-jar-no-fork</goal>
             </goals>
           </execution>
