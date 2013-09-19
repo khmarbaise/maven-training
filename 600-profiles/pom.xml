@@ -21,6 +21,27 @@
           <version>5.1.2600</version>
         </os>
       </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>com.soebes.maven.plugins</groupId>
+            <artifactId>maven-echo-plugin</artifactId>
+            <version>0.1</version>
+            <executions>
+              <execution>
+                <id>windows-xp</id>
+                <goals><goal>echo</goal></goals>
+                <phase>validate</phase>
+              </execution>
+            </executions>
+            <configuration>
+              <echos>
+                <echo>Windows XP Profile</echo>
+              </echos>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
     </profile>
     <profile>
       <id>mac-os-x</id>
@@ -32,6 +53,91 @@
           <version>10.5.8</version>
         </os>
       </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>com.soebes.maven.plugins</groupId>
+            <artifactId>maven-echo-plugin</artifactId>
+            <version>0.1</version>
+            <executions>
+              <execution>
+                <id>max-os-x-10.5.8</id>
+                <goals><goal>echo</goal></goals>
+                <phase>validate</phase>
+              </execution>
+            </executions>
+            <configuration>
+              <echos>
+                <echo>MAC OS X 10.5.8</echo>
+              </echos>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>mac-os-x-10.8.4</id>
+      <activation>
+        <os>
+          <name>mac os x</name>
+          <family>mac</family>
+          <arch>x86_64</arch>
+          <version>10.8.4</version>
+        </os>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>com.soebes.maven.plugins</groupId>
+            <artifactId>maven-echo-plugin</artifactId>
+            <version>0.1</version>
+            <executions>
+              <execution>
+                <id>max-os-x-10.8.4</id>
+                <goals><goal>echo</goal></goals>
+                <phase>validate</phase>
+              </execution>
+            </executions>
+            <configuration>
+              <echos>
+                <echo>MAC OS X 10.8.4</echo>
+              </echos>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>mac-os-x-10.8.5</id>
+      <activation>
+        <os>
+          <name>mac os x</name>
+          <family>mac</family>
+          <arch>x86_64</arch>
+          <version>10.8.5</version>
+        </os>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>com.soebes.maven.plugins</groupId>
+            <artifactId>maven-echo-plugin</artifactId>
+            <version>0.1</version>
+            <executions>
+              <execution>
+                <id>max-os-x-10.8.5</id>
+                <goals><goal>echo</goal></goals>
+                <phase>validate</phase>
+              </execution>
+            </executions>
+            <configuration>
+              <echos>
+                <echo>MAC OS X 10.8.5</echo>
+              </echos>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
     </profile>
     <profile>
       <id>hudson-build</id>

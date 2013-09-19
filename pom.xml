@@ -36,6 +36,7 @@
     <module>555-plugin-management</module>
     
     <module>600-profiles</module>
+    <module>610-profiles</module>
     
     <module>900-prepare-release</module>
   </modules>
