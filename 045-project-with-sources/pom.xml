@@ -23,6 +23,9 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
+        <configuration>
+          <classifier>anton</classifier>
+        </configuration>
         <executions>
           <execution>
             <id>test-source2</id>
@@ -30,6 +33,9 @@
             <goals>
               <goal>test-jar-no-fork</goal>
             </goals>
+            <configuration>
+              <classifier>xyz</classifier>
+            </configuration>
           </execution>
           <execution>
             <id>test-source1</id>

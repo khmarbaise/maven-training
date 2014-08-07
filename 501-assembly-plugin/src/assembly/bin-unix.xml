@@ -9,7 +9,7 @@
 		<format>tar.bz2</format>
 	</formats>
 	<componentDescriptors>
-		<componentDescriptor>src/main/assembly/bin-component.xml</componentDescriptor>
+		<componentDescriptor>src/assembly/bin-component.xml</componentDescriptor>
 	</componentDescriptors>
 	<fileSets>
 		<fileSet>

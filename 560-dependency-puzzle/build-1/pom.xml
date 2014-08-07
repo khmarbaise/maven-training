@@ -1,0 +1,45 @@
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.soebes.smpp</groupId>
+    <artifactId>smpp</artifactId>
+    <version>0.6.2</version>
+  </parent>
+
+  <groupId>com.soebes.training.module.it-container.selenium</groupId>
+  <artifactId>parent</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>MaUI Test Guide :: IT Container</name>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <tomcat.major>6</tomcat.major>
+    <tomcat.minor>0</tomcat.minor>
+    <tomcat.patch>32</tomcat.patch>
+    <tomcat.version>${tomcat.major}.${tomcat.minor}.${tomcat.patch}</tomcat.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <modules>
+    <module>mod-war</module>
+    <module>mod-prop</module>
+    <module>mod-package</module>
+  </modules>
+</project>
+

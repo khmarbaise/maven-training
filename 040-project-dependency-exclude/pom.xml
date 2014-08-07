@@ -8,6 +8,7 @@
   <groupId>com.soebes.training.module</groupId>
   <artifactId>project-dependency-exclude</artifactId>
   <version>0.1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
 
   <name>040 :: Project dependency exclude</name>
 
@@ -27,6 +28,7 @@
           <target>1.6</target>
         </configuration>
       </plugin>
+      <!--
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
@@ -45,15 +47,18 @@
           </execution>
         </executions>
       </plugin>
+      -->
     </plugins>
   </build>
   <dependencyManagement>
     <dependencies>
+      <!--
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>4.8.1</version>
       </dependency>
+      -->
       <dependency>
         <groupId>log4j</groupId>
         <artifactId>log4j</artifactId>
@@ -71,22 +76,12 @@
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
         <version>6.0.1</version>
-<!--
         <exclusions>
           <exclusion>
             <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
           </exclusion>
         </exclusions>
--->
-<!--
-        <exclusions>
-          <exclusion>
-            <groupId>*</groupId>
-            <artifactId>*</artifactId>
-          </exclusion>
-        </exclusions>
--->
       </dependency>
 <!--
       <dependency>
@@ -101,14 +96,21 @@
 
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>3.7</version>
       </dependency>
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
-      </dependency>
+      <exclusions>
+        <exclusion>
+          <artifactId>jcommander</artifactId>
+          <groupId>com.beust</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
       <dependency>
         <groupId>log4j</groupId>
         <artifactId>log4j</artifactId>
