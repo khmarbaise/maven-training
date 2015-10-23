@@ -12,13 +12,31 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
    </properties>
-  <build>
+   <build>
+     <testResources>
+       <testResource>
+         <directory>src/it</directory>
+       </testResource>
+     </testResources>
+     <!--
+     <resources>
+       <resource>
+          <directory>src/main/resources</directory>
+          <filtering>true</filtering>
+        </resource>
+       <resource>
+         <directory>src/main/resources/sub</directory>
+          <filtering>false</filtering>
+        </resource>
+     </resources>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-resources-plugin</artifactId>
         <version>2.6</version>
       </plugin>
+     -->
+    <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>

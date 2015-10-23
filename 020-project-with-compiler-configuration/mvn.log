@@ -1,0 +1,850 @@
+Apache Maven 3.2.1 (ea8b2b07643dbb1b84b6d16e1f08391b666bc1e9; 2014-02-14T18:37:52+01:00)
+Maven home: /usr/share/maven
+Java version: 1.7.0_21, vendor: Oracle Corporation
+Java home: /Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "mac os x", version: "10.8.5", arch: "x86_64", family: "mac"
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from /usr/share/maven/conf/settings.xml
+[DEBUG] Reading user settings from /Users/kama/.m2/settings.xml
+[DEBUG] Using local repository at /Users/kama/.m2/repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /Users/kama/.m2/repository
+[INFO] Scanning for projects...
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://central).
+[DEBUG] Extension realms for project com.soebes.training.module:020-project-compiler-configuration:jar:0.1.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecyle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: com.soebes.training.module:020-project-compiler-configuration:jar:0.1.0-SNAPSHOT
+[DEBUG] Tasks:   [compile]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building 020 :: Project with compiler configuration 0.1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       com.soebes.training.module:020-project-compiler-configuration:0.1.0-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile]
+[DEBUG] Repositories (dependencies): [nexus (http://localhost:8081/nexus/content/groups/public, releases+snapshots)]
+[DEBUG] Repositories (plugins)     : [nexus (http://localhost:8081/nexus/content/groups/public, releases+snapshots)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution>${mojoExecution}</mojoExecution>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">true</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">1.6</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">1.6</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+  <mavenSession default-value="${session}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=0, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=1, ConflictIdSorter.conflictIdCount=2, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2, ConflictResolver.conflictItemCount=2, DefaultDependencyCollector.collectTime=9, DefaultDependencyCollector.transformTime=5}
+[DEBUG] com.soebes.training.module:020-project-compiler-configuration:jar:0.1.0-SNAPSHOT
+[DEBUG]    junit:junit:jar:4.8.1:test
+[DEBUG]    log4j:log4j:jar:1.2.14:compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ 020-project-compiler-configuration ---
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: javax.enterprise.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=0, ConflictMarker.nodeCount=77, ConflictIdSorter.graphTime=1, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=26, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4, ConflictResolver.conflictItemCount=74, DefaultDependencyCollector.collectTime=169, DefaultDependencyCollector.transformTime=6}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:2.6:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]       junit:junit:jar:3.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:1.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.13:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:2.6
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:1.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.13
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.6
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.6
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@3f610944]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:resources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/target/classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.soebes.training.module:020-project-compiler-configuration:0.1.0-SNAPSHOT @ /Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/src/main/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@41963d89
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Oracle Corporation, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, env.SECURITYSESSIONID=187b8, env.COLORFGBG=0;15, env.GEM_HOME=/Users/kama/.rvm/gems/ruby-1.9.3-p429, os.name=Mac OS X, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home/jre/lib/JObjC.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home/jre/classes, env.TMPDIR=/var/folders/22/mdbr7dbx7ln66nz3yhrhph_h0000gn/T/, env.Apple_Ubiquity_Message=/tmp/launch-0qQkr8/Apple_Ubiquity_Message, env.PWD=/Users/kama/ws-git/maven-training/020-project-with-compiler-configuration, user.country.format=DE, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.7.0_21-b12, env.MY_RUBY_HOME=/Users/kama/.rvm/rubies/ruby-1.9.3-p429, env.Apple_PubSub_Socket_Render=/tmp/launch-JHi25r/Render, project.build.sourceEncoding=UTF-8, env.rvm_version=1.20.13 (), user.name=kama, maven.build.version=Apache Maven 3.2.1 (ea8b2b07643dbb1b84b6d16e1f08391b666bc1e9; 2014-02-14T18:37:52+01:00), env.USER=kama, env.SHELL=/bin/bash, env.__CF_USER_TEXT_ENCODING=0x1F5:0:0, env.PATH=/Applications/Doxygen.app/Contents/Resources:/usr/share/gradle/bin:/usr/share/groovy/bin:/Users/kama/bin:/opt/local/bin:/opt/local/sbin:/Users/kama/.rvm/gems/ruby-1.9.3-p429/bin:/Users/kama/.rvm/gems/ruby-1.9.3-p429@global/bin:/Users/kama/.rvm/rubies/ruby-1.9.3-p429/bin:/Users/kama/.rvm/bin:/usr/share/maven/bin:/usr/local/mysql/bin:/opt/subversion/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/local/MacGPG2/bin, user.language=en, env.rvm_prefix=/Users/kama, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home/jre/lib, classworlds.conf=/usr/share/maven/bin/m2.conf, env.rvm_path=/Users/kama/.rvm, env.LC_CTYPE=UTF-8, env.RUBY_VERSION=ruby-1.9.3-p429, java.version=1.7.0_21, user.timezone=Europe/Berlin, sun.arch.data.model=64, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home/jre/lib/endorsed, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, env.ITERM_SESSION_ID=w0t3p0, env.rvm_bin_path=/Users/kama/.rvm/bin, file.encoding.pkg=sun.io, env.SHLVL=1, file.separator=/, java.specification.name=Java Platform API Specification, java.class.version=51.0, org.slf4j.simpleLogger.defaultLogLevel=debug, env.JAVA_MAIN_CLASS_77092=org.codehaus.plexus.classworlds.launcher.Launcher, user.country=US, java.home=/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home/jre, java.vm.info=mixed mode, env.LOGNAME=kama, os.version=10.8.5, path.separator=:, java.vm.version=23.21-b01, env.IRBRC=/Users/kama/.rvm/rubies/ruby-1.9.3-p429/.irbrc, env.JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, env.TERM=xterm-256color, sun.io.unicode.encoding=UnicodeBig, awt.toolkit=sun.lwawt.macosx.LWCToolkit, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, env.GEM_PATH=/Users/kama/.rvm/gems/ruby-1.9.3-p429:/Users/kama/.rvm/gems/ruby-1.9.3-p429@global, user.home=/Users/kama, env.OLDPWD=/Users/kama/ws-git/maven-training/020-project-with-compiler-configuration, java.specification.vendor=Oracle Corporation, env.TERM_PROGRAM=iTerm.app, java.library.path=/Users/kama/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor.url=http://java.oracle.com/, env.MAVEN_CMD_LINE_ARGS=-X compile, java.vm.vendor=Oracle Corporation, gopherProxySet=false, maven.home=/usr/share/maven, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -X compile, java.class.path=/usr/share/maven/boot/plexus-classworlds-2.5.1.jar, maven.version=3.2.1, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.7, sun.cpu.endian=little, sun.os.patch.level=unknown, env.HOME=/Users/kama, java.io.tmpdir=/var/folders/22/mdbr7dbx7ln66nz3yhrhph_h0000gn/T/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, env.SSH_AUTH_SOCK=/tmp/launch-UdaCBp/Listeners, env.COMMAND_MODE=unix2003, os.arch=x86_64, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, java.ext.dirs=/Users/kama/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, env.PERL5LIB=/opt/subversion/lib/svn-perl/, user.dir=/Users/kama/ws-git/maven-training/020-project-with-compiler-configuration, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, env.ITERM_PROFILE=Default, file.encoding=UTF-8, java.specification.version=1.7, junit.version=4.8.1}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] resource with targetPath null
+directory /Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/src/main/resources
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 1 resource
+[DEBUG] file log4j.properties has a filtered file extension
+[DEBUG] copy /Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/src/main/resources/log4j.properties to /Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/target/classes/log4j.properties
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ 020-project-compiler-configuration ---
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for snapshots (http://snapshots.maven.codehaus.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache-snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache-snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for apache.snapshots (http://people.apache.org/repo/m2-snapshot-repository).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror nexus (http://localhost:8081/nexus/content/groups/public) for central (http://repo.maven.apache.org/maven2).
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=0, ConflictMarker.nodeCount=160, ConflictIdSorter.graphTime=1, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=43, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7, ConflictResolver.conflictItemCount=63, DefaultDependencyCollector.collectTime=247, DefaultDependencyCollector.transformTime=9}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.1:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:1.5.1:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]          org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:1.0:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:0.1:compile
+[DEBUG]       com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.2:runtime
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.5.5:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.2:compile
+[DEBUG]       org.apache.xbean:xbean-reflect:jar:3.4:compile
+[DEBUG]          log4j:log4j:jar:1.2.12:compile
+[DEBUG]          commons-logging:commons-logging-api:jar:1.1:compile
+[DEBUG]       com.google.collections:google-collections:jar:1.0:compile
+[DEBUG]       junit:junit:jar:3.8.2:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:0.1
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.2
+[DEBUG]   Included: org.apache.xbean:xbean-reflect:jar:3.4
+[DEBUG]   Included: log4j:log4j:jar:1.2.12
+[DEBUG]   Included: commons-logging:commons-logging-api:jar:1.1
+[DEBUG]   Included: com.google.collections:google-collections:jar:1.0
+[DEBUG]   Included: junit:junit:jar:3.8.2
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-toolchain:jar:1.0
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.5.5
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-classworlds:jar:2.2.2
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.1:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1, parent: sun.misc.Launcher$AppClassLoader@3f610944]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.1:compile' with basic configurator -->
+[DEBUG]   (f) basedir = /Users/kama/ws-git/maven-training/020-project-with-compiler-configuration
+[DEBUG]   (f) buildDirectory = /Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/target
+[DEBUG]   (f) classpathElements = [/Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/target/classes, /Users/kama/.m2/repository/log4j/log4j/1.2.14/log4j-1.2.14.jar]
+[DEBUG]   (f) compileSourceRoots = [/Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/src/main/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = /Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/target/generated-sources/annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.1:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/target/classes
+[DEBUG]   (f) projectArtifact = com.soebes.training.module:020-project-compiler-configuration:jar:0.1.0-SNAPSHOT
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = true
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.6
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.6
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG]   (f) mavenSession = org.apache.maven.execution.MavenSession@41963d89
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@41963d89
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Source directories: [/Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/src/main/java]
+[DEBUG] Classpath: [/Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/target/classes
+ /Users/kama/.m2/repository/log4j/log4j/1.2.14/log4j-1.2.14.jar]
+[DEBUG] Output directory: /Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/target/classes
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[DEBUG] Stale source detected: /Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/src/main/java/com/soebes/training/maven/simple/BitMask.java
+[INFO] Changes detected - recompiling the module!
+[DEBUG] Classpath:
+[DEBUG]  /Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/target/classes
+[DEBUG]  /Users/kama/.m2/repository/log4j/log4j/1.2.14/log4j-1.2.14.jar
+[DEBUG] Source roots:
+[DEBUG]  /Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/src/main/java
+[DEBUG] Command line options:
+[DEBUG] -d /Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/target/classes -classpath /Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/target/classes:/Users/kama/.m2/repository/log4j/log4j/1.2.14/log4j-1.2.14.jar: -sourcepath /Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/src/main/java: -s /Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/target/generated-sources/annotations -g -target 1.6 -source 1.6 -encoding UTF-8
+[DEBUG] incrementalBuildHelper#beforeRebuildExecution
+[INFO] Compiling 1 source file to /Users/kama/ws-git/maven-training/020-project-with-compiler-configuration/target/classes
+[DEBUG] incrementalBuildHelper#afterRebuildExecution
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.409 s
+[INFO] Finished at: 2014-09-22T13:05:07+01:00
+[INFO] Final Memory: 15M/183M
+[INFO] ------------------------------------------------------------------------

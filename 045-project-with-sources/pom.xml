@@ -8,8 +8,7 @@
   <parent>
     <groupId>com.soebes.smpp</groupId>
     <artifactId>smpp</artifactId>
-    <version>0.6.2</version>
-    <relativePath/>
+    <version>0.6.4</version>
   </parent>
 
   <groupId>com.soebes.training.module</groupId>
@@ -18,55 +17,15 @@
 
   <name>045 :: Project with source</name>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-source-plugin</artifactId>
-        <configuration>
-          <classifier>anton</classifier>
-        </configuration>
-        <executions>
-          <execution>
-            <id>test-source2</id>
-            <phase>package</phase>
-            <goals>
-              <goal>test-jar-no-fork</goal>
-            </goals>
-            <configuration>
-              <classifier>xyz</classifier>
-            </configuration>
-          </execution>
-          <execution>
-            <id>test-source1</id>
-            <phase>package</phase>
-            <goals>
-              <goal>jar-no-fork</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.8.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
-      <version>1.2.14</version>
     </dependency>
   </dependencies>
 

@@ -10,16 +10,23 @@
   <name>032 :: Simple Project with filtered resources</name>
 
   <properties>
+    <anton>[[cdata...]]</anton>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
   <build>
     <resources>
       <resource>
-          <directory>src/main/resources</directory>
-          <filtering>true</filtering>
-        </resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
     </resources>
+    <testResources>
+      <testResource>
+        <directory>src/test/resources</directory>
+        <filtering>true</filtering>
+      </testResource>
+    </testResources>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
